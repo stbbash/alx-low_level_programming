@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * main - Entry point
+ * main - print putchar
  *
  * Return : Always returns 0
  *
@@ -17,5 +16,6 @@ int main(void)
     _putchar('a');
     _pucthar('r');
     _putchar('\n');
+    
     return (0);
 }
