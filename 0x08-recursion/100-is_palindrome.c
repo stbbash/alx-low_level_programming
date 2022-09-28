@@ -9,6 +9,7 @@
 int length(char *s)
 {
 	int i = 0;
+
 	if (*s)
 	{
 		i = i + length(s + 1);
@@ -49,5 +50,6 @@ int helper2(int i, char *s)
 int is_palindrome(char *s)
 {
 	int i = 1;
+
 	return (helper2(i, s));
 }
