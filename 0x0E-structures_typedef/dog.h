@@ -1,5 +1,5 @@
-#ifndef DOG_H_INCLUDED
-#define DOG_H_INCLUDED
+#ifndef _DOG_H_INCLUDED
+#define _DOG_H_INCLUDED
 
 /**
 * struct dog - information about dogs
@@ -23,12 +23,12 @@ struct dog
 
 typedef struct dog dog_t;
 
-void init_dog(struct dog *, char *, float, char *);
+void init_dog(struct dog *d, char *owner, float age, char *name);
 
-void print_dog(struct dog *);
+void print_dog(struct dog *d);
 
-dog_t *new_dog(char *, float, char *);
+dog_t *new_dog(char *name, float age, char *owner);
 
-void free_dog(dog_t *);
+void free_dog(dog_t *d);
 
 #endif
